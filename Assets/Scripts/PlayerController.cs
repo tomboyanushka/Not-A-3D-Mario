@@ -35,6 +35,12 @@ public class PlayerController : MonoBehaviour
         {
             jetpackFuel = 1.5f;
         }
-
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Coins")
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -11,11 +11,11 @@ public class CoinController : MonoBehaviour
         transform.Rotate(0, Time.deltaTime * rotateSpeed, 0, Space.World);
 	}
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Player")
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        Destroy(this.gameObject);
+    //    }
+    //}
 }
